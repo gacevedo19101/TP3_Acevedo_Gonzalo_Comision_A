@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#loadingMessage {
+    color: #007bff;
+    font-style: italic;
+}
+
+#errorMessage {
+    color: red;
+    font-weight: bold;
+}
+
+#tareasCompletadasLista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#tareasCompletadasLista li {
+    background-color: #e6ffe6; /* Fondo verde claro para tareas completadas */
+    border: 1px solid #ccebcc;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#tareasCompletadasLista li::before {
+    content: '✔️'; /* Icono de check mark */
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #28a745; /* Color del check mark */
+}
