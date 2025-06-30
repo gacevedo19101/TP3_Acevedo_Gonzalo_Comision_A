@@ -64,10 +64,7 @@ function App() {
 
     setResult(`Resultado: ${calculatedResult}`);
   };
-
-  // Determinar si el botón "Calcular" debe estar deshabilitado
-  // Se deshabilita si la operación es 'division'
-  const isCalculateButtonDisabled = operation === 'division';
+  const isCalculateButtonDisabled = operation === 'division' && parseFloat(num2) === 0;
 
   return (
     <div className="calculator-container">
